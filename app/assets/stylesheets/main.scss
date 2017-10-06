@@ -1,0 +1,110 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #4B7399;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+.archived{
+  color: red;
+
+}
+
+.favouritee{
+    background-color:#03030a;
+}
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+form input {
+  font-size: 20px;
+}
+form input[type='text'] {
+  width: 900px;
+}
+
+body input, body button, body select, body textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body label, body input, body button, body select, body textarea {
+    font-size: 0.929em;
+    font-weight: normal;
+    line-height: 18px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+
+td, th {
+    text-align: left;
+    display: table-cell;
+    vertical-align: inherit;
+    line-height: 3.25;
+
+
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+#draw {
+  margin: 20px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+div {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+
+.favourite {
+  position: relative;
+}
+.favourite.on:after {
+  content: "Hide";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+}

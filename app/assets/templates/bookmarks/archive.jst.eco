@@ -1,0 +1,39 @@
+
+<%= console.log("jjjjj")%>
+<%= console.log(@bookmarks.models)%>
+<h1>Archive </h1>
+<div>
+<a href='/' class='home'>My Bookmark</a>
+
+<a href='/#favour' class='a'>Favourite</a>
+<a href='/#search' class='b'>Archive</a>
+</div>
+
+
+<table style="width:100%">
+<thead>
+<tr>
+ <th class="fixed">Title</th>
+ <th class="small">URL</th>
+ <th class="small">Fevourite</th>
+ 
+ </tr>
+</thead>
+<tbody id="archives"></tbody>
+
+<% for bookmark in @bookmarks.models: %>
+		<tr>
+ 		<td width="40%">  
+    	<span class="second"><%= bookmark.get('title')%></span>
+		</td>
+
+		<td width="40%">
+		<a class="second" href=<%= bookmark.get('urlname')%>><%= 	bookmark.get('urlname')%></a>
+		</td>
+
+		<td width="10%">
+		<span class="third"><%= bookmark.get('favourite')%></span>
+		</td>
+		</tr>
+<% end %>
+</table>

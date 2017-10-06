@@ -1,0 +1,29 @@
+
+
+<h1>Bookmark </h1>
+<div>
+<a href='/' class='mybook'>My Bookmark</a>
+
+<a href='/#favour' class='a'>Favourite</a>
+<a href='/#search' class='b'>Archive</a>
+</div>
+<form id="new_bookmark">
+
+</form>
+
+<table style="width:100%">
+<thead>
+<tr>
+ <th class="fixed">Title</th>
+ <th class="small">URL</th>
+ <th class="small">Fevourite</th>
+ <th class="small">Archive</th>
+ <th colspan="4" class="equal"> Operation  </th>
+ 
+ </tr>
+</thead>
+<tbody id="bookmarks"></tbody>
+</table>
+<p id="archives"></p>
+
+

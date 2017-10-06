@@ -1,0 +1,42 @@
+
+<%= console.log("jjjjj")%>
+<h1>Favourite </h1>
+<div>
+<a href='/' class='home'>My Bookmark</a>
+
+<a href='/#favour' class='a'>Favourite</a>
+<a href='/#search' class='b'>Archive</a>
+</div>
+
+
+<table style="width:100%">
+<thead>
+<tr>
+ <th class="fixed">Title</th>
+ <th class="small">URL</th>
+ <th class="small">Fevourite</th>
+ <th class="small">Operation</th>
+ 
+ </tr>
+</thead>
+<tbody id="favourite"></tbody>
+
+<% for bookmark in @bookmarks.models: %>
+		<tr>
+ 		<td width="30%">  
+    	<span class="second"><%= bookmark.get('title')%></span>
+		</td>
+
+		<td width="30%">
+		<a class="second" href=<%= bookmark.get('urlname')%>><%= bookmark.get('urlname')%></a>
+		</td>
+
+		<td width="30%">
+		<span class="third"><%= bookmark.get('favourite')%></span>
+		</td>
+		<td width="10%">
+ 	       <button class="favourite" data-id='<%=bookmark.id%>'><%= if bookmark.get('favourite') then 'unfavourite' else "favourite"%></button>
+        </td>
+		</tr>
+<% end %>
+</table>
